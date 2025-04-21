@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RanDom</title>
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <style>
+      
+        #btn1{
+            background: #f65a08;
+            color:white;
+            border:1px solid #f65a08;
+            
+        }
+        #btn1:hover,#btn1:focus{
+          color:#f65a08;
+          background: white;
+          border:1px solid #f65a08;
+        }
+        
+        .nav-link{
+            margin-left:20px;
+            padding:20px;
+            font-weight: 500;
+            font-size: large;
+        }
+        .navbar-brand{
+          margin-right:0px;
+        }
+        .nav-link:hover{
+            color:#f65a08;
+        }
+        @media(max-width:991px){
+            .sidebar{
+                /* background-color:black; */
+                backdrop-filter: blur(10px);
+            }
+        }
+        #main-nav .nav-link{
+        padding: 4px 1px 4px 1px;
+        }
+        
+        span{
+            color: #f65d0e;
+            font-weight: bold;
+        }
+        
+  .popular-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000000; /* dark background */
+    color: white;
+    position: relative;
+  }
+  .popular-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .order-btn_yellow{
+      border:none;
+    }
+    .order-btn_yellow:hover{
+      color: black;
+      background:white;
+      border:1px solid yellow;
+    }
+    .order-btn_orange{
+      border:none;
+    }
+    .order-btn_orange:hover{
+      color:black;
+      background:white;
+      border:1px solid #f65d0e;
+    }
+    .order-btn_green{
+      border:none;
+    }
+    .order-btn_green:hover{
+      color: black;
+      background:white;
+      border:1px solid green;
+    }
+    .order-btn_red{
+      border:none;
+    }
+    .order-btn_red:hover{
+      color: black;
+      background:white;
+      border:1px solid red;
+    }
+  
+  .view-all-btn {
+    background-color: #f65d0e;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 10px 25px;
+    font-weight: 600;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .about-section {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+
+    .about-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .highlight {
+      color: #f15a24;
+      font-weight: 700;
+    }
+
+    .icon-check {
+      color: #f15a24;
+      margin-right: 10px;
+    }
+
+    .learn-more {
+      color: #f15a24;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #f15a24;
+    }
+
+    .learn-more:hover {
+      color: #d9480f;
+      border-color: #d9480f;
+    }
+    .services-section {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-weight: 700;
+    }
+
+    .highlight-orange {
+      color: #f15a24;
+    }
+
+    .service-item {
+      margin-top: 40px;
+    }
+
+    .service-img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      position: relative;
+      padding: 15px;
+      background-color: #fff;
+    }
+
+    .circle-bg {
+      border-radius: 50%;
+      padding: 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+   
+
+    .yellow-bg {
+      background-color: #fdd835;
+      color: #000;
+    }
+
+    .orange-bg {
+      background-color: #f15a24;
+      color: #fff;
+    }
+
+    .green-bg {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .red-bg {
+      background-color: #ef5350;
+      color: #fff;
+    }
+
+   
+    .newsletter-section {
+      background-color: #f4f5f7;
+      border-radius: 30px;
+      padding: 60px 30px;
+      text-align: center;
+      max-width: 900px;
+      margin: 50px auto;
+    }
+
+    .newsletter-section h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .highlight-text {
+      color: #f15c22;
+    }
+
+    .newsletter-section p {
+      color: #6c757d;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .newsletter-input {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input input {
+      border-radius: 30px 0 0 30px;
+      padding: 15px 20px;
+      border: none;
+      outline: none;
+    }
+
+    .newsletter-input .btn-subscribe {
+      border-radius: 0 30px 30px 0;
+      background-color: #f15c22;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+    }
+
+    .newsletter-input .btn-subscribe:hover {
+      background-color: #e04d10;
+    }
+    .footer {
+      background-color: #fff;
+      
+    }
+
+    .footer .footer-logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .footer .footer-logo span {
+      color: #f15a24;
+    }
+
+    .footer .footer-text {
+      color: #777;
+      max-width: 300px;
+    }
+
+    .footer .social-icons i {
+      font-size: 20px;
+      margin-right: 15px;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .footer .social-icons i:hover {
+      color: #f15a24;
+    }
+
+    .footer h5 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer ul li a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      color: #f15a24;
+    }
+
+    .footer .contact-info i {
+      color: #f15a24;
+      margin-right: 10px;
+    }
+
+    .footer-bottom {
+      background-color: #f15a24;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 40px;
+      
+      
+    }
+    .card img {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    max-height: 500px; /* Set a maximum height */
+    object-fit: contain; /* Fit the image within the container */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect Ratio 16:9 */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+}
+.btn {
+    margin: 0;
+}
+
+#btn1{
+    background: #f65a08;
+    border:none;
+    
+}
+.nav-link{
+    margin-left:20px;
+    padding:20px;
+    font-weight: 500;
+    font-size: large;
+}
+.nav-link:hover{
+    color:#f65a08;
+}
+@media(max-width:991px){
+    .sidebar{
+        /* background-color:black; */
+        backdrop-filter: blur(10px);
+    }
+}
+#main-nav .nav-link{
+padding: 4px 1px 4px 1px;
+
+}
+iframe{
+    width: 300px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-white" style="height:120px;";>
+            <div class="container-fluid" >
+            <!-- logo -->
+            <div class="d-flex justify-content-center align-items-center">
+                <a class="navbar-brand " href="index.php" ><img src="image/Front2.png" alt="" style="height: 60px; "></a>
+                <text class="p-2 "style="font-size:25px;"><a href="index.php" class="link-underline link-underline-opacity-0";><span style="font-weight: bold";>Ran</span><span style="color:black;";>Dom</span> </a></text>
+            </div>
+                <!-- toggler btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+           
+                    <div class="offcanvas-header" >
+                        <!-- sidebar header -->
+                        <h5 class="offcanvas-title text-black border-bottom border-bottom-black" id="offcanvasNavbarLabel">
+                            <img src="img/logos1.png" alt="" style="height: 50px; "></h5>
+                    </div>
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0 justify-content-center align-items-center">
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-0 pe-3"width: fit-content; padding: 10px;>
+                         <li id="main-nav" class="nav-item d-flex">
+                             <a class="nav-link px-3" href="index.php">Home</a>
+                             <a class="nav-link px-3" href="#service-section">Services</a>
+                             <a class="nav-link px-3" href="#foods-section">Foods</a>
+                             <a class="nav-link px-3" href="#footer-section">Contact</a>
+                             <a class="nav-link px-3" href="#about-section">About</a>
+                         </li>
+                            </ul>
+                    </div>
+    
+                        <!-- user login -->
+                        <div class="d-flex flex-column justify-content-center align-item-center" style="padding-right: 20px;">
+                            <ul class="navbar-nav ml-auto nav-flex-icons">
+                                <li class="nav-item dropdown" >
+                                    <a href="login.php" class="btn btn-outline-dark rounded-pill px-4 py-3" id="btn">
+                                        <i class="fa fa-user me-1"></i>Login</a>
+                                        
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-item-center" >
+                            <ul class="navbar-nav ml-auto nav-flex-icons">
+                                <li class="nav-item dropdown">
+                                    <a href="registration.php" class="btn btn-outline-dark rounded-pill px-4 py-3" id="btn1">
+                                        <i class="fa fa-user me-1"></i>Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="d-flex mt-2 " >
+        <div class="container-fluid my-auto ">
+            <div class="row">
+                <div class="col-lg-6 my-auto ps-5 "  >
+                    <h1 class="display-4 fw-normal">Your Favorite Meals,</h1>
+                    <p class="display-4 fw-normal"><span style="font-weight: bold";>Just </span>  a Click Away  </p>
+                    <p class="fw-light" > Order easily, enjoy endlessly — fresh, delicious food delivered straight to your home. 
+                    </p>
+                    <a href="" class="btn btn-outline-dark rounded-pill mx-2 px-4 py-3" id="btn1">Order Now</a>
+                    <a href="" class="btn btn-outline-dark rounded-pill px-4 py-3" id="btn" >Learn More</a>
+                </div>
+                <div class="col-lg-6 " >
+                    <div class="col-lg-9 ">
+                        <div class="card-body">
+                            <img src="image/Front.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="foods-section" id="foods-section";>
+    <div class="container my-5">
+      <div class="d-flex justify-content-between align-items-center mb-4" id="spans">
+        <h2 class="display-4 fw-normal" >
+          Our <span style="color: #f65d0e;">Popular</span> Items
+        </h2>
+        <a href=""class="btn btn-outline-dark rounded-pill px-4 py-3" id="btn1" >View All </a>
+      </div>
+    
+      <p class="text-muted mb-5">Top Picks to Tame Your Hunger</p>
+    
+      <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-md-6">
+          <div class="popular-card d-flex">
+            <div class="p-4 flex-grow-1">
+              <h5>Four Cheese Pizza</h5>
+              <p class="mb-4">Free Delivery for first order</p>
+              <button class="order-btn btn-outline-dark rounded-pill px-4 py-3" id="btn1">Order Now</button>
+            </div>
+            <div class="col-6">
+              <img src="image/pizzaEd.jpg" alt="Pizza">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 2 -->
+        <div class="col-md-6">
+          <div class="popular-card d-flex">
+            <div class="p-4 flex-grow-1">
+              <h5>Margherita Pizza</h5>
+              <p class="mb-4">Flats 10% discount on Sunday</p>
+              <button class="order-btn btn-outline-dark rounded-pill px-4 py-3" id="btn1">Order Now</button>
+            </div>
+            <div class="col-6">
+              <img src="image/orgMarE.jpg" alt="Margherita">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 3 -->
+        <div class="col-md-6">
+          <div class="popular-card d-flex">
+            <div class="p-4 flex-grow-1">
+              <h5>Hot Dog</h5>
+              <p class="mb-4">Get 20% off on your order</p>
+              <button class="order-btn btn-outline-dark rounded-pill px-4 py-3" id="btn1">Order Now</button>
+            </div>
+            <div class="col-6">
+              <img src="image/hotdogE.jpeg" alt="Hot Dog">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 4 -->
+        <div class="col-md-6">
+          <div class="popular-card d-flex">
+            <div class="p-4 flex-grow-1">
+              <h5>Burger King</h5>
+              <p class="mb-4">Free Delivery for first order</p>
+              <button class="order-btn btn-outline-dark rounded-pill px-4 py-3" id="btn1">Order Now</button>
+            </div>
+            <div class="col-6">
+              <img src="image/burgerE.jpg" alt="Burger">
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    </section>
+    <section class="about-section" id="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Image Side -->
+          <div class="col-md-6">
+            <div class="about-image">
+              <img src="image/abtt.jpeg" alt="Food Skewers">
+            </div>
+          </div>
+          <!-- Text Side -->
+          <div class="col-md-6">
+            <p class="text-uppercase text-muted mb-2">— About Us</p>
+            <h2 class="fw-bold display-5">Inspired by Taste,<br>Built on <span class="highlight">Quality</span></h2>
+            <p class="text-muted my-4">
+              Passionate about quality, we create delicious <br> meals with fresh ingredients and care.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+              <i class="fa fa-check-circle" style="color:#f15a24"></i> Fresh Food, Fast Delivery
+              </li>
+              <li class="mb-3">
+              <i class="fa fa-check-circle" style="color:#f15a24"></i> Taste the Freshness in Every Bite
+              </li>
+              <li class="mb-3">
+              <i class="fa fa-check-circle" style="color:#f15a24"></i> 10% off every Sunday for all food items
+              </li>
+            </ul>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services-section" id="service-section">
+      <div class="container">
+        <p class="text-muted text-uppercase mb-2"> — Our Services</p>
+        <h2 class="mb-3">Bringing Quality and <br> Convenience to <span class="highlight-orange">Your Table</span></h2>
+        <p class="text-muted mb-5">
+          Our services include fast meal delivery, personalized catering, <br>and more, all crafted with fresh ingredients.
+        </p>
+    
+        <div class="row justify-content-center g-4">
+          <!-- Item 1 -->
+          <div class="col-6 col-md-3 service-item">
+            <div class="circle-bg" style="background-color: #ffeb3b;">
+              <div class="service-img">
+                <img src="image/co.jpg" alt="Mc White Coffee" class="img-fluid rounded-circle">
+              </div>
+            </div>
+            <h5 class="mt-3 fw-semibold">Mc White Coffee</h5>
+            <button class="order-btn_yellow yellow-bg mt-2 rounded-pill px-4 py-3" style="border:1px solid #ffeb3b";>Order Now</button>
+          </div>
+    
+          <!-- Item 2 -->
+          <div class="col-6 col-md-3 service-item">
+            <div class="circle-bg" style="background-color: #ff5722;">
+              <div class="service-img">
+                <img src="image/db.jpeg" alt="Double Burger" class="img-fluid rounded-circle">
+              </div>
+            </div>
+            <h5 class="mt-3 fw-semibold">Double Burger</h5>
+            <button class=" order-btn_orange orange-bg mt-2 rounded-pill px-4 py-3" style="border:1px solid  #ff5722";>Order Now</button>
+          </div>
+    
+          <!-- Item 3 -->
+          <div class="col-6 col-md-3 service-item">
+            <div class="circle-bg" style="background-color: #4caf50;">
+              <div class="service-img">
+                <img src="image/ha.jpg" alt="Hawaiian Pizza" class="img-fluid rounded-circle">
+              </div>
+            </div>
+            <h5 class="mt-3 fw-semibold">Hawaiian Pizza</h5>
+            <button class=" order-btn_green green-bg mt-2 rounded-pill px-4 py-3"style="border:1px solid #4caf50";>Order Now</button>
+          </div>
+    
+          <!-- Item 4 -->
+          <div class="col-6 col-md-3 service-item">
+            <div class="circle-bg" style="background-color: #e53935;">
+              <div class="service-img">
+                <img src="image/pp.jpeg" alt="Pepperoni Pizza" class="img-fluid rounded-circle">
+              </div>
+            </div>
+            <h5 class="mt-3 fw-semibold">Pepperoni Pizza</h5>
+            <button class="order-btn_red red-bg mt-2 rounded-pill px-4 py-3"style="border:1px solid  #e53935";>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="newsletter-section shadow-sm">
+
+        <footer class="footer" id="footer-section";>
+            <div class="container">
+              <div class="row" >
+                <!-- Logo and About -->
+                <div class="col-md-4">
+                  <div class="footer-logo mb-3">
+                    <img src="image/Front2.png" alt="logo" style="width: 30px; margin-right: 5px;">
+                    Ran<span>Dom</span>
+                  </div>
+                  <p class="footer-text">
+                    Join us for exclusive updates, tasty offers, and fresh meals delivered straight to your doorstep.
+                  </p>
+                  <div class="social-icons mt-3">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://np.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+          
+                <!-- Explore -->
+                <div class="col-md-2">
+                  <h5>Explore</h5>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#service-section">Services</a></li>
+                    <li><a href="#foods-section">Foods</a></li>
+                    <li><a href="#footer-section">Contact</a></li>
+                    <li><a href="#about-section">About</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Help -->
+                <div class="col-md-3">
+                  <h5>Help</h5>
+                  <ul>
+                    <li><a href="#footer-section">Account</a></li>
+                    <li><a href="#footer-section">Support Center</a></li>
+                    <li><a href="#footer-section">Privacy Policy</a></li>
+                    <li><a href="#footer-section">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Contact -->
+                <div class="col-md-3" >
+                  <h5>Contact</h5>
+                  <p class="contact-info"><i class='fas fa-map-marker-alt' style='font-size:21px'></i> Kathmandu, Nepal</p>
+                  <p class="contact-info"><i class="fas fa-phone"></i> +977 9848404004</p>
+                  <p class="contact-info"><i class="fas fa-envelope"></i> RanDom19@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              © 2025 RanDom | All Rights Reserved
+            </div>
+          
+          </footer>
+    
